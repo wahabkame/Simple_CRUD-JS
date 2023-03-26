@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container py-3">
+        <div class="form-group">
+            <label>Name:</label>
+            <input  id="userName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Price:</label>
+            <input  id="userSalary" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Model:</label>
+            <input  id="userModel" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea  id="userDesc" class="form-control"></textarea>
+        </div>
+
+        <button  class="btn btn-info mt-3 float-right" onclick="addProduct()">Click</button>
+        <div class="d"></div>
+
+    </div>
+
+    <div class="container">
+        <input  onkeyup="searchProduct(this.value)" id="userSearch" placeholder="search" class ="form-control w-50 m-auto">
+        <div class="row my-3" id="productsRow">
+            
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
